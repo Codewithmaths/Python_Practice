@@ -9,3 +9,24 @@ def single_number(nums):
 if __name__ == "__main__":
    nums = [4, 1, 2, 1, 2]
    print(single_number(nums)) #
+
+""" second method """
+def single_number(nums):
+   return 2 * sum(set(nums)) - sum(nums)
+if __name__ == "__main__":
+   nums = [4, 1, 2, 1, 2]
+   print(single_number(nums)) #  
+
+
+""" third method """
+def single_number(nums):
+   num_dict = {}
+   for num in nums:
+      if num in num_dict:
+         del num_dict[num]
+      else:
+         num_dict[num] = 1
+   return list(num_dict.keys())[0]
+if __name__ == "__main__":
+   nums = [4, 1, 2, 1, 2]
+   print(single_number(nums)) # 4
