@@ -22,3 +22,10 @@ if __name__ == "__main__":
    print("Mean:", mean(num))
    print("Median:", median(num))
    
+
+""" The PRO version of this code is available """
+import statistics
+num = input("Enter a list of numbers separated by commas: ").split(',')
+num = [int(i.strip()) for i in num]
+print("Mean:", statistics.mean(num))
+print("Median:", statistics.median(num))  
