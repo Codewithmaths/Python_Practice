@@ -19,3 +19,13 @@ if __name__ == "__main__":
       element = 5
       index = 2
       print(addElementArray(arr, element, index))
+
+""" Adding element to an array by using extend() method """
+""" used to add multiple elements to an array """
+def addElementArray(arr, element):
+      arr.extend(element)
+      return arr
+if __name__ == "__main__":
+      arr = [1, 2, 3, 4]
+      element = [5, 6]
+      print(addElementArray(arr, element))      
