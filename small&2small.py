@@ -7,7 +7,9 @@ def smallSecSmall(nums):
       if nums[i] != small:
          secondSmall = nums[i]
          break
-   return small, secondSmall
+   if secondSmall is None:
+      return [-1]
+   return [small, secondSmall]
 if __name__ == "__main__":
    nums  = input("Enter your list by separating number with commas:").split(',')
    nums = [float(i.strip()) for i in nums]
