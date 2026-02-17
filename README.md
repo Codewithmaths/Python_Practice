@@ -37,7 +37,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 If you have any questions or suggestions, please feel free to reach out:
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
+- **Email**: [singh507manav@gmail.com](singh507manav@gmail.com)
 - **GitHub**: [Codewithmaths](https://github.com/Codewithmaths)
 
 Happy Coding!
