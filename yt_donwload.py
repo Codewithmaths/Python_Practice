@@ -15,6 +15,7 @@ def on_progress(stream, chunk, bytes_remaining):
         downloaded = total - bytes_remaining
         pct = downloaded / total * 100
         print(f"\rDownloading... {pct:5.1f}% ", end="", flush=True)
+        Print("Working")
 
 def download(url: str, out_dir: str = ".", resolution: str | None = None):
     yt = YouTube(url, on_progress_callback=on_progress)
