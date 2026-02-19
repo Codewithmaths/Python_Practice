@@ -11,4 +11,15 @@ def perfect_number(n):
    return sum == n
 
 print(perfect_number(137438691328)) # True
+
+
+def perfect_number(n):
+   sum = 0
+   for i in range(1,n):
+      if n % i == 0:
+         sum += 1
+   return sum == n
+if __name__ == "__main__":
+   n = int(input("Enter a number: "))
+   print(perfect_number(n)) # True or False)
          
